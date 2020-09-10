@@ -48,7 +48,10 @@ public class PickUpItems : MonoBehaviour
             thisTtem.transform.localPosition = itemposition;
             thisTtem.GetComponent<Rigidbody>().isKinematic = true;
             thisTtem.transform.rotation = transform.rotation;
+            thisTtem.GetComponent<Weapon>().SetInAlienHand(true);
+            thisTtem.GetComponent<Weapon>().SetInHand(false);
             heldItem = thisTtem;
+            
         }
         
 

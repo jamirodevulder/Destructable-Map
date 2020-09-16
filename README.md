@@ -1,28 +1,22 @@
 # Destructable-Map VR
-Hier komt een korte beschrijving van de proefopdracht. Wat heb je precies gedaan?
+het is een kleine vr game waar je dingen moet slopen met verschillende wapens waar je je wapens in een inventory kan plaatsen en je kan het inspawnen op de gewilde plek. alle wapens zijn te gebruiken.
 
-## Features
-Wanneer je een specifiek onderdeel wilt uitlichten kun je dat in deze sectie benoemen.
-
-- [Awesome Algoritme](link)
-- [Specifieke Mechanic](link)
-- [Iets unieks waar je trots op bent binnen de project](link)
 
 ## Leerdoelen
 Wat ik vooral wil leren is iets waar ik nog geen kennis van heb effiecient leren doormiddel van goede onderzoek en goeie tools te gebruiken.
 met een proffesionele workflow.
 - Scrum nog beter leren en gebruiken
-- Snel iets kunnen maken zonder kennis vooraf er van te hebben
+- Snel iets kunnen maken zonder kennis vooraf er van te hebben.
 - classes herbruikbaar maken.
-- gebruik maken van overerven
-- meer leren over VR
+- gebruik maken van overerven.
+- meer leren over VR.
 
 ## Bronnen
 Welke bronnen heb je gebruikt? Zowel youtube filmpjes als artikelen
 
-- [The Guide To Game Design](link)
-- [Alleatoric Algorithms](link)
-- [Flood-Fill Wikipedia](link)
+- [VR Movement](https://www.youtube.com/watch?v=5NRTT8Tbmoc)
+- [VR pointer](https://www.youtube.com/watch?v=rgTshoVCZVQ&t=251s)
+
 
 
 ## Tools

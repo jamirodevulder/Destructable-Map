@@ -15,6 +15,7 @@ public class VRPlayerMovement : MonoBehaviour
     [SerializeField] private SteamVR_Action_Boolean turnLeftInput;
     [SerializeField] private SteamVR_Input_Sources turnLeftInputSource = SteamVR_Input_Sources.RightHand;
     [SerializeField] private GameObject camera;
+    [SerializeField] private GameObject cameraParent;
     [SerializeField] private float speed = 1;
     [SerializeField] private int snapIncrement = 45;
     float smooth = 5.0f;
@@ -29,7 +30,11 @@ public class VRPlayerMovement : MonoBehaviour
             this.transform.RotateAround(camera.transform.position, Vector3.up, -Mathf.Abs(snapIncrement));
         if (turnRightInput.GetStateDown(turnRightInputSource))
             this.transform.RotateAround(camera.transform.position, Vector3.up, Mathf.Abs(snapIncrement));
+        
 
-
+    }
+    void Start()
+    {
+        camera.transform.position = transform.position;
     }
 }

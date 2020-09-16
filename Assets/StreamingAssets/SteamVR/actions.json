@@ -50,19 +50,23 @@
       "type": "boolean"
     },
     {
-      "name": "/actions/default/in/MoveTowards",
-      "type": "vector2"
-    },
-    {
-      "name": "/actions/default/in/RightRotation",
-      "type": "vector2"
+      "name": "/actions/default/in/RightTriggerHold",
+      "type": "boolean"
     },
     {
       "name": "/actions/default/in/TriggerShoot",
       "type": "boolean"
     },
     {
-      "name": "/actions/default/in/TriggerPickup",
+      "name": "/actions/default/in/MoveToWards",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/default/in/TriggerPickUp",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/RotateObject",
       "type": "boolean"
     },
     {

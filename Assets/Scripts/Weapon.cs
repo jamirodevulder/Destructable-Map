@@ -11,9 +11,16 @@ public class Weapon : MonoBehaviour
     private bool inAlienHand = false;
     public GameObject roboHand;
     [SerializeField] private Vector3 robohandRotation;
+    [SerializeField] private Vector3 holdsterRotation;
+    [SerializeField] private Vector3 alienHandPosition;
+    [SerializeField] private float holdRange = 0.15f;
     public void SetInAlienHand(bool val)
     {
         inAlienHand = val;
+    }
+    public bool GetInAlienHand()
+    {
+        return inAlienHand;
     }
     public void SetInHand(bool val)
     {
@@ -22,6 +29,10 @@ public class Weapon : MonoBehaviour
     private void Update()
     {
         checkForAlienRobotHand();
+    }
+    public Vector3 GetItemPositionForAlienHand()
+    {
+        return alienHandPosition;
     }
     public void checkForAlienRobotHand()
     {
@@ -35,11 +46,20 @@ public class Weapon : MonoBehaviour
                 { 
                     print("test");
                     GameObject thisTtem = colliders[0].gameObject;
-                    transform.parent = roboHand.transform;
-                    transform.position = roboHand.transform.position;
+                    transform.parent = colliders[0].gameObject.transform;
+                    transform.position = colliders[0].gameObject.transform.position;
                     GetComponent<Rigidbody>().isKinematic = true;
-                    transform.localRotation = Quaternion.Euler(robohandRotation.x, robohandRotation.y, robohandRotation.z);
-                    inhand = true;
+                    if (colliders[0].gameObject.tag != "Holder")
+                    {
+                        inhand = true;
+                        transform.localRotation = Quaternion.Euler(robohandRotation);
+                        transform.position = colliders[0].gameObject.transform.position;
+                    }
+                    else
+                    {
+                        transform.localRotation = Quaternion.Euler(holdsterRotation);
+                        transform.position = new Vector3(colliders[0].gameObject.transform.position.x, colliders[0].gameObject.transform.position.y + 0.2f, colliders[0].gameObject.transform.position.z);
+                    }
                 }
             }
             inAlienHand = false;

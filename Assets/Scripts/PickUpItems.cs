@@ -44,12 +44,13 @@ public class PickUpItems : MonoBehaviour
         if(0 < colliders.Length && heldItem == null)
         {
             GameObject thisTtem = colliders[0].gameObject;
+            Weapon thisItemWeapon = thisTtem.GetComponent<Weapon>();
             thisTtem.transform.parent = gameObject.transform;
-            thisTtem.transform.localPosition = itemposition;
+            thisTtem.transform.localPosition = thisItemWeapon.GetItemPositionForAlienHand();
             thisTtem.GetComponent<Rigidbody>().isKinematic = true;
             thisTtem.transform.rotation = transform.rotation;
-            thisTtem.GetComponent<Weapon>().SetInAlienHand(true);
-            thisTtem.GetComponent<Weapon>().SetInHand(false);
+            thisItemWeapon.SetInAlienHand(true);
+            thisItemWeapon.SetInHand(false);
             heldItem = thisTtem;
             
         }

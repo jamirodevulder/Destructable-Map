@@ -105,19 +105,11 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Vector2 MoveTowards
+        public virtual SteamVR_Action_Boolean RightTriggerHold
         {
             get
             {
-                return SteamVR_Actions.default_MoveTowards;
-            }
-        }
-        
-        public virtual SteamVR_Action_Vector2 RightRotation
-        {
-            get
-            {
-                return SteamVR_Actions.default_RightRotation;
+                return SteamVR_Actions.default_RightTriggerHold;
             }
         }
         
@@ -129,11 +121,27 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Boolean TriggerPickup
+        public virtual SteamVR_Action_Vector2 MoveToWards
         {
             get
             {
-                return SteamVR_Actions.default_TriggerPickup;
+                return SteamVR_Actions.default_MoveToWards;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean TriggerPickUp
+        {
+            get
+            {
+                return SteamVR_Actions.default_TriggerPickUp;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean RotateObject
+        {
+            get
+            {
+                return SteamVR_Actions.default_RotateObject;
             }
         }
         

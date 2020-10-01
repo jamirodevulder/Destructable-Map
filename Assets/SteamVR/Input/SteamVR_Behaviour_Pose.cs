@@ -5,13 +5,13 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.Events;
 using Valve.VR;
-
 namespace Valve.VR
 {
     /// <summary>
     /// This component simplifies the use of Pose actions. Adding it to a gameobject will auto set that transform's position and rotation every update to match the pose.
     /// Advanced velocity estimation is handled through a buffer of the last 30 updates.
     /// </summary>
+    
     public class SteamVR_Behaviour_Pose : MonoBehaviour
     {
         public SteamVR_Action_Pose poseAction = SteamVR_Input.GetAction<SteamVR_Action_Pose>("Pose");
@@ -134,6 +134,7 @@ namespace Valve.VR
                 transform.localPosition = poseAction[inputSource].localPosition;
                 transform.localRotation = poseAction[inputSource].localRotation;
             }
+
         }
 
         private void SteamVR_Behaviour_Pose_OnChange(SteamVR_Action_Pose fromAction, SteamVR_Input_Sources fromSource)

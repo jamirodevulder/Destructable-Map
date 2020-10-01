@@ -22,10 +22,14 @@ public class ObjectPlacer: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ArsenalObject = Instantiate(ArsenalObject, new Vector3(1000, 1000, 1000), Quaternion.identity);
+        transparentArsenalObject = Instantiate(transparentArsenalObject, new Vector3(1000, 1000, 1000), Quaternion.identity);
         line = GetComponent<LineRenderer>();
         line.enabled = false;
         placeObject = GetComponent<PlaceObject>();
         objectPlaceAble = transparentArsenalObject.GetComponent<ObjectPlaceAble>();
+
+
     }
 
     // Update is called once per frame

@@ -1,5 +1,5 @@
 # Destructable-Map VR
-het is een kleine vr game waar je dingen moet slopen met verschillende wapens waar je je wapens in een inventory kan plaatsen en je kan het inspawnen op de gewilde plek. alle wapens zijn te gebruiken.
+het is een kleine vr wereld waar je dingen moet slopen met verschillende wapens waar je je wapens in een inventory kan plaatsen en je kan het inspawnen op de gewilde plek. alle wapens zijn te gebruiken.
 
 
 ## Leerdoelen
